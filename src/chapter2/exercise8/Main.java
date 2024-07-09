@@ -13,6 +13,6 @@ public class Main {
 
         ZoneOffset zoneOffset = ZoneOffset.ofHours(offset);
         OffsetTime current = OffsetTime.now(zoneOffset);
-        System.out.println("The current time is " + current.getHour() + ":" + current.getMinute() + ":" + current.getSecond());
+        System.out.printf("The current time is %02d:%02d:%02d\n", current.getHour(), current.getMinute(), current.getSecond());
     }
 }
