@@ -15,7 +15,8 @@ public class Main {
         System.out.print("Enter number of years: ");
         int numberOfYears = scanner.nextInt();
 
-        double futureInvestmentValue = investmentAmount + investmentAmount * numberOfYears * annualInterestRate / 100;
-        System.out.println("Accumulated value is $" + futureInvestmentValue); // TODO
+        double monthlyInterestRate = annualInterestRate / 12;
+        double futureInvestmentValue = investmentAmount * Math.pow(1 + monthlyInterestRate / 100, numberOfYears * 12);
+        System.out.println("Accumulated value is $" + futureInvestmentValue);
     }
 }
