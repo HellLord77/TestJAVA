@@ -15,7 +15,7 @@ public class Main {
         System.out.print("Enter inches: ");
         int inch = scanner.nextInt();
 
-        final double KILOGRAMS_PER_POUND = 0.453_592_37;
+        final double KILOGRAMS_PER_POUND = 0.45359237;
         final double METERS_PER_INCH = 0.0254;
 
         double height = foot * 12 + inch;
