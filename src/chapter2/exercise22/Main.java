@@ -22,7 +22,7 @@ public class Main {
 
         System.out.println("Your amount " + amount + " consists of");
         System.out.println("\t" + numberOfOneDollars + " dollars");
-        System.out.println("\t" + numberOfQuarters + " quarters ");
+        System.out.println("\t" + numberOfQuarters + " quarters");
         System.out.println("\t" + numberOfDimes + " dimes");
         System.out.println("\t" + numberOfNickels + " nickels");
         System.out.println("\t" + numberOfPennies + " pennies");
