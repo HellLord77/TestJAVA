@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         String[] terms = {"scissor", "rock", "paper"};
 
-        int term = (int) (Math.random() * 3);
+        int term = (int) (Math.random() * terms.length);
 
         Scanner scanner = new Scanner(System.in);
 

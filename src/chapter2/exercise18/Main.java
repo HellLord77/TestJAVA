@@ -9,7 +9,8 @@ public class Main {
         System.out.println("a\tb\tpow(a, b)");
         for (int a = start; a <= stop; ++a) {
             int b = a + step;
-            System.out.println(a + "\t" + b + "\t" + (int) Math.pow(a, b));
+            int p = (int) Math.pow(a, b);
+            System.out.println(a + "\t" + b + "\t" + p);
         }
     }
 }

@@ -20,10 +20,6 @@ public class Main {
         System.out.print("Enter a three-digit integer: ");
         int num = input.nextInt();
 
-        System.out.print(num + " is ");
-        if (!isPalindrome(num)) {
-            System.out.print("not ");
-        }
-        System.out.println("a palindrome");
+        System.out.println(num + " is " + (isPalindrome(num) ? "" : "not ") + "a palindrome");
     }
 }

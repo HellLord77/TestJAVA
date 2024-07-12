@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         String[] faces = {"head", "tail"};
 
-        int face = (int) (Math.random() * 2);
+        int face = (int) (Math.random() * faces.length);
 
         Scanner scanner = new Scanner(System.in);
 
