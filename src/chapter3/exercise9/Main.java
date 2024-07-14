@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter the first 9 digits of an ISBN as integer:  ");
+        System.out.print("Enter the first 9 digits of an ISBN as integer: ");
         int isbn = scanner.nextInt();
 
         System.out.print("The ISBN-10 number is ");
