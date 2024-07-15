@@ -7,7 +7,7 @@ public class Main {
             boolean div5 = num % 5 == 0;
             boolean div6 = num % 6 == 0;
             if ((div5 || div6) && !(div5 && div6)) {
-                System.out.printf(String.valueOf(num));
+                System.out.print(num);
                 if (count % 10 == 0) {
                     System.out.println();
                 } else {
