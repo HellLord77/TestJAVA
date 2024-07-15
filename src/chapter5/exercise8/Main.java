@@ -11,7 +11,7 @@ public class Main {
 
         int first = 0;
         String firstName = null;
-        for (int i = 1; i <= num; i++) {
+        for (int i = 1; i <= num; ++i) {
             System.out.printf("Name of student %d: ", i);
             String name = scanner.next();
             System.out.printf("Score of student %d: ", i);

@@ -13,7 +13,7 @@ public class Main {
         String firstName = null;
         int second = 0;
         String secondName = null;
-        for (int i = 1; i <= num; i++) {
+        for (int i = 1; i <= num; ++i) {
             System.out.printf("Name of student %d: ", i);
             String name = scanner.next();
             System.out.printf("Score of student %d: ", i);

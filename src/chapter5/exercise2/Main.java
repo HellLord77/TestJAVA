@@ -10,7 +10,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         long startTime = System.currentTimeMillis();
-        for (int i = 0; i < NUMBER_OF_QUESTIONS; i++) {
+        for (int i = 0; i < NUMBER_OF_QUESTIONS; ++i) {
             int number1 = 1 + (int) (Math.random() * 15);
             int number2 = 1 + (int) (Math.random() * 15);
 
