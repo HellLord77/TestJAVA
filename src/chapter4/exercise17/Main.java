@@ -17,7 +17,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int[] days = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        int[] dayCount = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         String[] months = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 
         Scanner input = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class Main {
         String month = input.next();
 
         int monthIndex = arrayFind(months, month);
-        int day = days[monthIndex];
+        int day = dayCount[monthIndex];
         if (monthIndex == 1 && isLeapYear(year)) {
             ++day;
         }

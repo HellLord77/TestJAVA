@@ -11,7 +11,7 @@ public class Main {
 
         System.out.print("The ISBN-10 number is ");
         int checksum = 0;
-        for (int i = 1; i < 10; i++) {
+        for (int i = 1; i < 10; ++i) {
             int digit = (int) (isbn / Math.pow(10, 9 - i)) % 10;
             System.out.print(digit);
             checksum += digit * i;
