@@ -9,11 +9,10 @@ public class Main {
         System.out.print("Enter the first 9 digits of an ISBN as integer: ");
         int isbn = scanner.nextInt();
 
-        System.out.print("The ISBN-10 number is ");
+        System.out.printf("The ISBN-10 number is %d", isbn);
         int checksum = 0;
         for (int i = 1; i < 10; ++i) {
             int digit = (int) (isbn / Math.pow(10, 9 - i)) % 10;
-            System.out.print(digit);
             checksum += digit * i;
         }
         checksum %= 11;
