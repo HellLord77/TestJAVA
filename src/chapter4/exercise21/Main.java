@@ -13,7 +13,7 @@ public class Main {
     }
 
     public static boolean isValid(String str, int length) {
-        return str.length() == length && isDigits(str);
+        return length == str.length() && isDigits(str);
     }
 
     public static void main(String[] args) {
