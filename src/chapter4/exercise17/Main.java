@@ -20,13 +20,13 @@ public class Main {
         int[] dayCount = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         String[] months = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a year: ");
-        int year = input.nextInt();
+        int year = scanner.nextInt();
 
         System.out.print("Enter a month: ");
-        String month = input.next();
+        String month = scanner.nextLine();
 
         int monthIndex = arrayFind(months, month);
         int day = dayCount[monthIndex];

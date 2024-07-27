@@ -15,7 +15,7 @@ public class Main {
         String secondName = null;
         for (int i = 1; i <= num; ++i) {
             System.out.printf("Name of student %d: ", i);
-            String name = scanner.next();
+            String name = scanner.nextLine();
             System.out.printf("Score of student %d: ", i);
             int score = scanner.nextInt();
             if (score > first) {

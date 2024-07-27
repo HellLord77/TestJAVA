@@ -7,10 +7,10 @@ public class Main {
         int number1 = (int) (Math.random() * 100);
         int number2 = (int) (Math.random() * 100);
 
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("What is " + number1 + " + " + number2 + "? ");
-        int answer = input.nextInt();
+        int answer = scanner.nextInt();
 
         if (number1 + number2 == answer) {
             System.out.println("You are correct!");

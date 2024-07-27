@@ -11,9 +11,8 @@ public class Main {
         System.out.print("Enter a letter: ");
         String letter = scanner.next().substring(0, 1);
 
-        String letterUpper = letter.toUpperCase();
-        char character = letter.charAt(0);
-        if (vowels.contains(letterUpper)) {
+        char character = letter.toUpperCase().charAt(0);
+        if (vowels.indexOf(character) != -1) {
             System.out.printf("%s is a vowel%n", letter);
         } else if ('A' <= character && character <= 'Z') {
             System.out.printf("%s is a consonant%n", letter);

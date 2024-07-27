@@ -7,7 +7,7 @@ public class Main {
         final int NUMBER_OF_QUESTIONS = 10;
         int correctCount = 0;
         String output = "";
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         long startTime = System.currentTimeMillis();
         for (int i = 0; i < NUMBER_OF_QUESTIONS; ++i) {
@@ -15,7 +15,7 @@ public class Main {
             int number2 = 1 + (int) (Math.random() * 15);
 
             System.out.printf("What is %d + %d? ", number1, number2);
-            int answer = input.nextInt();
+            int answer = scanner.nextInt();
 
             if (number1 + number2 == answer) {
                 System.out.println("You are correct!");

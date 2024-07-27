@@ -6,10 +6,10 @@ public class Main {
     public static void main(String[] args) {
         String[] statuses = {"Freshman", "Sophomore", "Junior", "Senior"};
 
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter two characters: ");
-        String characters = input.next();
+        String characters = scanner.nextLine();
 
         char major = characters.charAt(0);
         int status = characters.charAt(1) - '1';

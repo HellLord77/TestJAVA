@@ -7,7 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter the first 9 digits of an ISBN as string: ");
-        String isbn = scanner.next();
+        String isbn = scanner.nextLine();
 
         System.out.printf("The ISBN-10 number is %s", isbn);
         int checksum = 0;
