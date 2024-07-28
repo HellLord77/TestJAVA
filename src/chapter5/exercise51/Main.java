@@ -1,27 +1,16 @@
 package chapter5.exercise51;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
-    public static char[] getLongestCommonPrefix(char[] s1, char[] s2) {
-        char[] result = new char[0];
-        int[][] lengths = new int[s1.length + 1][s2.length + 1];
-        for (int i = 0; i <= s1.length; i++) {
-            for (int j = 0; j <= s2.length; j++) {
-                if (i == 0 || j == 0) {
-                    lengths[i][j] = 0;
-                } else if (s1[i - 1] == s2[j - 1]) {
-                    lengths[i][j] = lengths[i - 1][j - 1] + 1;
-                    if (lengths[i][j] > result.length) {
-                        result = Arrays.copyOfRange(s1, j - lengths[i][j], j);
-                    }
-                } else {
-                    lengths[i][j] = 0;
-                }
+    public static String getLongestCommonPrefix(String first, String second) {
+        for (int end = first.length(); end > 1; --end) {
+            String prefix = first.substring(0, end);
+            if (prefix.equals(second.substring(0, end))) {
+                return prefix.strip();
             }
         }
-        return result;
+        return "";
     }
 
     public static void main(String[] args) {
@@ -33,7 +22,7 @@ public class Main {
         System.out.print("Enter the second string: ");
         String second = scanner.nextLine();
 
-        String prefix = String.valueOf(getLongestCommonPrefix(first.toCharArray(), second.toCharArray()));
+        String prefix = getLongestCommonPrefix(first, second);
         if (prefix.isEmpty()) {
             System.out.printf("%s and %s have no common prefix%n", first, second);
         } else {
